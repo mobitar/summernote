@@ -47,6 +47,21 @@ define(['summernote/base/core/range'], function (range) {
     };
 
     /**
+    *  @method commit
+    *  Resets history stack, but keeps current editor's content.
+    */
+    this.commit = function() {
+      // Clear the stack.
+      stack = [];
+
+      // Restore stackOffset to its original value.
+      stackOffset = -1;
+
+      // Record our first snapshot (of nothing).
+      this.recordUndo();
+    };
+
+    /**
     * @method reset
     * Resets the history stack completely; reverting to an empty editor.
     */

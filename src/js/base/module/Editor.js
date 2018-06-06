@@ -219,6 +219,16 @@ define([
     };
     context.memo('help.undo', lang.help.undo);
 
+    /*
+    * commit
+    */
+    this.commit = function() {
+      context.triggerEvent('before.command', $editable.html());
+      history.commit();
+      context.triggerEvent('change', $editable.html());
+    };
+    context.memo('help.commit', lang.help.commit);
+
     /**
      * redo
      */

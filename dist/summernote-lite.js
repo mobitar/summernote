@@ -6,7 +6,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license./
  *
- * Date: 2017-09-09T11:03Z
+ * Date: 2018-06-06T01:47Z
  */
 (function (factory) {
   /* global define */
@@ -3895,6 +3895,21 @@
     };
 
     /**
+    *  @method commit
+    *  Resets history stack, but keeps current editor's content.
+    */
+    this.commit = function() {
+      // Clear the stack.
+      stack = [];
+
+      // Restore stackOffset to its original value.
+      stackOffset = -1;
+
+      // Record our first snapshot (of nothing).
+      this.recordUndo();
+    };
+
+    /**
     * @method reset
     * Resets the history stack completely; reverting to an empty editor.
     */
@@ -5179,6 +5194,16 @@
       context.triggerEvent('change', $editable.html());
     };
     context.memo('help.undo', lang.help.undo);
+
+    /*
+    * commit
+    */
+    this.commit = function() {
+      context.triggerEvent('before.command', $editable.html());
+      history.commit();
+      context.triggerEvent('change', $editable.html());
+    };
+    context.memo('help.commit', lang.help.commit);
 
     /**
      * redo
