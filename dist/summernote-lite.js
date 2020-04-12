@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-02-19T09:12Z
+ * Date: 2020-04-12T04:41Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -121,7 +121,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
 "use strict";
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -131,9 +131,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Renderer =
-/*#__PURE__*/
-function () {
+var Renderer = /*#__PURE__*/function () {
   function Renderer(markup, children, options, callback) {
     _classCallCheck(this, Renderer);
 
@@ -2157,9 +2155,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Context_Context =
-/*#__PURE__*/
-function () {
+var Context_Context = /*#__PURE__*/function () {
   /**
    * @param {jQuery} $note
    * @param {Object} options
@@ -2609,9 +2605,7 @@ function pointToTextRange(point) {
    */
 
 
-var range_WrappedRange =
-/*#__PURE__*/
-function () {
+var range_WrappedRange = /*#__PURE__*/function () {
   function WrappedRange(sc, so, ec, eo) {
     range_classCallCheck(this, WrappedRange);
 
@@ -3578,9 +3572,7 @@ function History_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 
-var History_History =
-/*#__PURE__*/
-function () {
+var History_History = /*#__PURE__*/function () {
   function History(context) {
     History_classCallCheck(this, History);
 
@@ -3741,9 +3733,7 @@ function Style_createClass(Constructor, protoProps, staticProps) { if (protoProp
 
 
 
-var Style_Style =
-/*#__PURE__*/
-function () {
+var Style_Style = /*#__PURE__*/function () {
   function Style() {
     Style_classCallCheck(this, Style);
   }
@@ -3930,9 +3920,7 @@ function Bullet_createClass(Constructor, protoProps, staticProps) { if (protoPro
 
 
 
-var Bullet_Bullet =
-/*#__PURE__*/
-function () {
+var Bullet_Bullet = /*#__PURE__*/function () {
   function Bullet() {
     Bullet_classCallCheck(this, Bullet);
   }
@@ -4258,9 +4246,7 @@ function Typing_createClass(Constructor, protoProps, staticProps) { if (protoPro
  *
  */
 
-var Typing_Typing =
-/*#__PURE__*/
-function () {
+var Typing_Typing = /*#__PURE__*/function () {
   function Typing(context) {
     Typing_classCallCheck(this, Typing);
 
@@ -4718,9 +4704,7 @@ TableResultAction.resultAction = {
  *
  */
 
-var Table_Table =
-/*#__PURE__*/
-function () {
+var Table_Table = /*#__PURE__*/function () {
   function Table() {
     Table_classCallCheck(this, Table);
   }
@@ -5101,9 +5085,7 @@ var KEY_BOGUS = 'bogus';
  * @class Editor
  */
 
-var Editor_Editor =
-/*#__PURE__*/
-function () {
+var Editor_Editor = /*#__PURE__*/function () {
   function Editor(context) {
     var _this = this;
 
@@ -6187,9 +6169,7 @@ function Clipboard_createClass(Constructor, protoProps, staticProps) { if (proto
 
 
 
-var Clipboard_Clipboard =
-/*#__PURE__*/
-function () {
+var Clipboard_Clipboard = /*#__PURE__*/function () {
   function Clipboard(context) {
     Clipboard_classCallCheck(this, Clipboard);
 
@@ -6257,9 +6237,7 @@ function Dropzone_createClass(Constructor, protoProps, staticProps) { if (protoP
 
 
 
-var Dropzone_Dropzone =
-/*#__PURE__*/
-function () {
+var Dropzone_Dropzone = /*#__PURE__*/function () {
   function Dropzone(context) {
     Dropzone_classCallCheck(this, Dropzone);
 
@@ -6399,6 +6377,12 @@ function () {
 
 
 // CONCATENATED MODULE: ./src/js/base/module/Codeview.js
+function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 function Codeview_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Codeview_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -6417,9 +6401,7 @@ if (env.hasCodeMirror) {
  */
 
 
-var Codeview_CodeView =
-/*#__PURE__*/
-function () {
+var Codeview_CodeView = /*#__PURE__*/function () {
   function CodeView(context) {
     Codeview_classCallCheck(this, CodeView);
 
@@ -6484,12 +6466,11 @@ function () {
               return '';
             }
 
-            var _iteratorNormalCompletion = true;
-            var _didIteratorError = false;
-            var _iteratorError = undefined;
+            var _iterator = _createForOfIteratorHelper(whitelist),
+                _step;
 
             try {
-              for (var _iterator = whitelist[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+              for (_iterator.s(); !(_step = _iterator.n()).done;) {
                 var src = _step.value;
 
                 // pass if src is trusted
@@ -6498,18 +6479,9 @@ function () {
                 }
               }
             } catch (err) {
-              _didIteratorError = true;
-              _iteratorError = err;
+              _iterator.e(err);
             } finally {
-              try {
-                if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-                  _iterator["return"]();
-                }
-              } finally {
-                if (_didIteratorError) {
-                  throw _iteratorError;
-                }
-              }
+              _iterator.f();
             }
 
             return '';
@@ -6613,9 +6585,7 @@ function Statusbar_createClass(Constructor, protoProps, staticProps) { if (proto
 
 var EDITABLE_PADDING = 24;
 
-var Statusbar_Statusbar =
-/*#__PURE__*/
-function () {
+var Statusbar_Statusbar = /*#__PURE__*/function () {
   function Statusbar(context) {
     Statusbar_classCallCheck(this, Statusbar);
 
@@ -6675,9 +6645,7 @@ function Fullscreen_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 
-var Fullscreen_Fullscreen =
-/*#__PURE__*/
-function () {
+var Fullscreen_Fullscreen = /*#__PURE__*/function () {
   function Fullscreen(context) {
     var _this = this;
 
@@ -6755,9 +6723,7 @@ function Handle_createClass(Constructor, protoProps, staticProps) { if (protoPro
 
 
 
-var Handle_Handle =
-/*#__PURE__*/
-function () {
+var Handle_Handle = /*#__PURE__*/function () {
   function Handle(context) {
     var _this = this;
 
@@ -6911,9 +6877,7 @@ function AutoLink_createClass(Constructor, protoProps, staticProps) { if (protoP
 var defaultScheme = 'http://';
 var linkPattern = /^([A-Za-z][A-Za-z0-9+-.]*\:[\/]{2}|tel:|mailto:[A-Z0-9._%+-]+@)?(www\.)?(.+)$/i;
 
-var AutoLink_AutoLink =
-/*#__PURE__*/
-function () {
+var AutoLink_AutoLink = /*#__PURE__*/function () {
   function AutoLink(context) {
     var _this = this;
 
@@ -6999,9 +6963,7 @@ function AutoSync_createClass(Constructor, protoProps, staticProps) { if (protoP
  * textarea auto sync.
  */
 
-var AutoSync_AutoSync =
-/*#__PURE__*/
-function () {
+var AutoSync_AutoSync = /*#__PURE__*/function () {
   function AutoSync(context) {
     var _this = this;
 
@@ -7037,9 +6999,7 @@ function AutoReplace_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
-var AutoReplace_AutoReplace =
-/*#__PURE__*/
-function () {
+var AutoReplace_AutoReplace = /*#__PURE__*/function () {
   function AutoReplace(context) {
     var _this = this;
 
@@ -7143,9 +7103,7 @@ function Placeholder_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
-var Placeholder_Placeholder =
-/*#__PURE__*/
-function () {
+var Placeholder_Placeholder = /*#__PURE__*/function () {
   function Placeholder(context) {
     var _this = this;
 
@@ -7215,9 +7173,7 @@ function Buttons_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 
-var Buttons_Buttons =
-/*#__PURE__*/
-function () {
+var Buttons_Buttons = /*#__PURE__*/function () {
   function Buttons(context) {
     Buttons_classCallCheck(this, Buttons);
 
@@ -8086,9 +8042,7 @@ function Toolbar_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 
-var Toolbar_Toolbar =
-/*#__PURE__*/
-function () {
+var Toolbar_Toolbar = /*#__PURE__*/function () {
   function Toolbar(context) {
     Toolbar_classCallCheck(this, Toolbar);
 
@@ -8267,9 +8221,7 @@ function LinkDialog_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 
-var LinkDialog_LinkDialog =
-/*#__PURE__*/
-function () {
+var LinkDialog_LinkDialog = /*#__PURE__*/function () {
   function LinkDialog(context) {
     LinkDialog_classCallCheck(this, LinkDialog);
 
@@ -8456,9 +8408,7 @@ function LinkPopover_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
-var LinkPopover_LinkPopover =
-/*#__PURE__*/
-function () {
+var LinkPopover_LinkPopover = /*#__PURE__*/function () {
   function LinkPopover(context) {
     var _this = this;
 
@@ -8553,9 +8503,7 @@ function ImageDialog_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
-var ImageDialog_ImageDialog =
-/*#__PURE__*/
-function () {
+var ImageDialog_ImageDialog = /*#__PURE__*/function () {
   function ImageDialog(context) {
     ImageDialog_classCallCheck(this, ImageDialog);
 
@@ -8710,9 +8658,7 @@ function ImagePopover_createClass(Constructor, protoProps, staticProps) { if (pr
  *  Handle.js will receive the events and invoke 'imagePopover.update'.
  */
 
-var ImagePopover_ImagePopover =
-/*#__PURE__*/
-function () {
+var ImagePopover_ImagePopover = /*#__PURE__*/function () {
   function ImagePopover(context) {
     var _this = this;
 
@@ -8800,9 +8746,7 @@ function TablePopover_createClass(Constructor, protoProps, staticProps) { if (pr
 
 
 
-var TablePopover_TablePopover =
-/*#__PURE__*/
-function () {
+var TablePopover_TablePopover = /*#__PURE__*/function () {
   function TablePopover(context) {
     var _this = this;
 
@@ -8898,9 +8842,7 @@ function VideoDialog_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
-var VideoDialog_VideoDialog =
-/*#__PURE__*/
-function () {
+var VideoDialog_VideoDialog = /*#__PURE__*/function () {
   function VideoDialog(context) {
     VideoDialog_classCallCheck(this, VideoDialog);
 
@@ -9103,9 +9045,7 @@ function HelpDialog_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 
-var HelpDialog_HelpDialog =
-/*#__PURE__*/
-function () {
+var HelpDialog_HelpDialog = /*#__PURE__*/function () {
   function HelpDialog(context) {
     HelpDialog_classCallCheck(this, HelpDialog);
 
@@ -9206,9 +9146,7 @@ function AirPopover_createClass(Constructor, protoProps, staticProps) { if (prot
 var AIRMODE_POPOVER_X_OFFSET = -5;
 var AIRMODE_POPOVER_Y_OFFSET = 5;
 
-var AirPopover_AirPopover =
-/*#__PURE__*/
-function () {
+var AirPopover_AirPopover = /*#__PURE__*/function () {
   function AirPopover(context) {
     var _this = this;
 
@@ -9336,9 +9274,7 @@ function HintPopover_createClass(Constructor, protoProps, staticProps) { if (pro
 
 var POPOVER_DIST = 5;
 
-var HintPopover_HintPopover =
-/*#__PURE__*/
-function () {
+var HintPopover_HintPopover = /*#__PURE__*/function () {
   function HintPopover(context) {
     var _this = this;
 
@@ -9917,6 +9853,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: external {"root":"jQuery","commonjs2":"jquery","commonjs":"jquery","amd":"jquery"}
@@ -9935,9 +9872,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var TooltipUI_TooltipUI =
-/*#__PURE__*/
-function () {
+var TooltipUI_TooltipUI = /*#__PURE__*/function () {
   function TooltipUI($node, options) {
     _classCallCheck(this, TooltipUI);
 
@@ -10045,9 +9980,7 @@ function DropdownUI_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 
-var DropdownUI_DropdownUI =
-/*#__PURE__*/
-function () {
+var DropdownUI_DropdownUI = /*#__PURE__*/function () {
   function DropdownUI($node, options) {
     DropdownUI_classCallCheck(this, DropdownUI);
 
@@ -10136,9 +10069,7 @@ function ModalUI_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 
-var ModalUI_ModalUI =
-/*#__PURE__*/
-function () {
+var ModalUI_ModalUI = /*#__PURE__*/function () {
   function ModalUI($node
   /*, options */
   ) {
